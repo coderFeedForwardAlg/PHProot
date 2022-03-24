@@ -1,23 +1,5 @@
-
-<?php
-    include_once 'includes/dbh.inc.php';
-    // http://localhost/PHProot/index.php
-    
-    $count = 5;
-
-?>
-
-
 <!DOCTYPE html>
-<!-- 
-    TODO:
-    make timer that records how long you work
-    https://www.w3schools.com/howto/howto_js_countdown.asp
 
-    https://www.wikihow.com/Pass-Variables-from-Javascript-to-PHP
-    (use method 2 )
-
--->
 <html>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -66,31 +48,6 @@
 
 
 
-    
-
-<h4 class="text-center">New work session </h4>
-<h5 class="text-center">Time to get stuff done <h5>
-
-<form action="includes/worksesh.php" method="POST" class="text-center"> 
-    <input type="text" name="day_time" placeholder ="the day and time">
-    <br>
-    <input type="text" name="day_year" placeholder ="day of the year">
-    <br>
-    <input type="number" name="how_long" placeholder ="how long in minutes ">
-    <br>
-    <input type="text" name="quality" placeholder ="quality ">
-    <br>
-    <input type="text" name="kind" placeholder ="kind of work">
-    <br>
-    <input type="number" name="reward_id" placeholder ="reward id">
-    <br>
-    <input type="number" name="Q_id" placeholder ="queue id">
-    <br>
-    <input type="number" name="user_id" placeholder ="user id">
-    <br>
-    <button type="submit" name="submit"> enter the data! </button>
-    <br>
-</form> 
 
 
 <h4>It's a new day</h4>
@@ -116,16 +73,6 @@
 
 </form> 
 
-<!--
-<h3> add a new queue </h3>
-<form action="inclueds/newQ.php" method="POST"> 
-    <input type="text" name= "queue_id" placeholder=" queue id">
-    <br>
-    <input type="text" naem = "queue_name" placeholder="the name of the queue">
-    <br> 
-    <button type="submit" name=submit> make the queue </button> 
-</form>
--->
 
 
 
