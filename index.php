@@ -40,6 +40,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="timer.php">timer</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="reports.php">reports</a>
                     </li>
@@ -55,6 +60,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="signIn.php"> log out   </a>
                     </li>
+                    
 
                 </ul>
 
@@ -70,7 +76,6 @@
 
 <h4 class="text-center">New work session </h4>
 <h5 class="text-center">Time to get stuff done <h5>
-
 <form action="includes/worksesh.php" method="POST" class="text-center"> 
     <input type="text" name="day_time" placeholder ="the day and time">
     <br>
@@ -93,28 +98,38 @@
 </form> 
 
 
-<h4>It's a new day</h4>
-<form action="includes/newDay.php" method="POST">
-    <input type= "text" name = "day" placeholder = "the day of the year"> 
-    <br>
-    <input type= "number" name = "time_sleeping" placeholder = "how much sleep did you get"> 
-    <br>
-    <input type= "number" name = "sleep_qual" placeholder = "how well did you sleep"> 
-    <br>
-    <button type = "submit" name = "submit"> enter new day record </button>
+    <div class="contaner">
+        <div class="d-flex flex-row my-flex-contaner">
 
-</form> 
+            <div>
+                <h4>It's a new day</h4>
+                <form action="includes/newDay.php" method="POST">
+                    <input type= "text" name = "day" placeholder = "the day of the year"> 
+                    <br>
+                    <input type= "number" name = "time_sleeping" placeholder = "how much sleep did you get"> 
+                    <br>
+                    <input type= "number" name = "sleep_qual" placeholder = "how well did you sleep"> 
+                    <br>
+                    <button type = "submit" name = "submit"> enter new day record </button>
 
+                </form> 
+            </div>
 
-<h4> add a new reward here</h4> 
-<form action="includes/newRew.inc.php" method="POST">
-    <input type= "text" name = "rewardIN" placeholder = "the reward"> 
-    <br>
-    <input type= "number" name = "rewardID_IN" placeholder = "the id"> 
-    <br>
-    <button type = "submit" name = "submit"> enter new reward </button>
+        <div>
+            <h4> add a new reward here</h4> 
+            <form action="includes/newRew.inc.php" method="POST">
+                <input type= "text" name = "rewardIN" placeholder = "the reward"> 
+                <br>
+                <input type= "number" name = "rewardID_IN" placeholder = "the id"> 
+                <br>
+                <button type = "submit" name = "submit"> enter new reward </button>
 
-</form> 
+            </form>
+        </div> 
+    </div>
+</div>
+
+ 
 
 <!--
 <h3> add a new queue </h3>
