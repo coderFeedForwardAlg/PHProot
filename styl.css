@@ -1,5 +1,5 @@
 button {
-    background-color: #940707;
+    background-color: #071594;
     border-radius: 4px;
     transition: 0.5s;
     padding-left: 20px;
@@ -73,4 +73,15 @@ body{
 
 .ic {
     text-align: center;
+}
+
+.my-flex-contaner {
+    border: 2px solid blue;
+    height: 150px;
+    margin-bottom: 20px;
+}
+#countdown {
+    color: green;
+    background-color: yellow;
+
 }
